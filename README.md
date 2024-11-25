@@ -25,6 +25,9 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[FE](https://nest-webinar-front.vercel.app/)
+PORT - http://localhost:5001/
+
 
 ## Installation
 

@@ -7,6 +7,8 @@ import configuration, {
 } from './core/config/configurationType';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './modules/users/users.module';
+import { BooksModule } from './modules/books/books.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -39,6 +41,8 @@ import { UsersModule } from './modules/users/users.module';
       },
     }),
     UsersModule,
+    BooksModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

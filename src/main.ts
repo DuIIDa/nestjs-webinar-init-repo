@@ -8,7 +8,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   //подключение глобального валидационного pipe https://docs.nestjs.com/techniques/validation
-  app.useGlobalPipes(new ValidationPipe());
+  app.useGlobalPipes(new ValidationPipe({
+    transform: true
+  }));
 
   //разрешены запросы с любых доменов
   app.enableCors({
